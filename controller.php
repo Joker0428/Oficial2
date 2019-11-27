@@ -1,11 +1,11 @@
 <?php 
-     
+     require "incluedes/autoload.php";
      session_start();
 
    //capturando os dados da url
     //ex.: admin/departamento/cadastrar/listar
     //model=departamento & action-listar
-    require "incluedes/autoload.php";
+    
     
     @$router = $_GET['model'].$_GET['action'];
     $view = "";
@@ -33,7 +33,7 @@
 
         case 'servicovizualizar':
               
-            \LOJA\incluedes\Seguranca::restritoAdm();
+            //\LOJA\incluedes\Seguranca::restritoAdm();
             $obj = new \LOJA\API\ServicoVizualizar;
             $servico = $obj->dados;
             $view = "vizualizar-servico-id.php";
@@ -196,13 +196,13 @@
 
         case 'carrinhoadicionar':
             $obj = new \LOJA\API\CarrinhoVisualizar;
-            $lista = $obj->lista;
-            $view = "carrinho.php";
+   
+            $view = "cart.php";
         break;
 
         case'carrinhoremover':
             $obj = new \LOJA\API\CarrinhoRemover;
-            $lista = $obj->lista;
+ 
             $view = "cart.php";
         break;
 

@@ -30,10 +30,10 @@
                             <a class="nav-link bg-yellow" href="<?php echo $url; ?>/home">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bg-yellow" href="<?php echo $url; ?>/teste/lista">Produtos</a>
+                            <a class="nav-link bg-yellow" href="<?php echo $url; ?>/produto/listar">Produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bg-yellow" href="<?php echo $url; ?>/servicos/cadastrar">Serviços</a>
+                            <a class="nav-link bg-yellow" href="<?php echo $url; ?>/servicos/visualizar">Serviços</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link bg-yellow" href="#">Contato</a>
@@ -50,7 +50,7 @@
                     <div class="container">
                         <button type="button" class="btn btn-dark bg-yello" ><a href="<?php echo $url; ?>/login/cliente"><i class="fas fa-user-circle"></i>Login</a></button>
                         
-                        <a href="#" class="bg-yellow center"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="<?php echo $url; ?>/carrinho" class="bg-yellow center"><i class="fas fa-shopping-cart"></i></a>
                     </div>
                 </div>
             </div>
