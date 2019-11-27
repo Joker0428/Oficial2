@@ -1,0 +1,360 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Jomolhari', serif;
+    background-image: url(../cima.jpg);
+    background-attachment: fixed;
+    background-size: auto;
+    background-repeat: no-repeat;
+   /* padding-top:4.2rem;*/
+   /* padding-bottom:4.2rem;*/
+}
+.bg-yellow {
+    color: #000 !important;
+}
+.bg-dark {
+    background-color: #E3E7E8 !important;
+}
+.my-sm-0 {
+    color: #1E9ACD !important;
+    background-color: #97C5D8 !important;
+}
+.my-sm-0:hover {
+    color: #97C5D8 !important;
+    background-color: #1E9ACD !important;
+}
+.center {
+    margin-left: 10%; /*ou 25%*/
+    margin-top: ;
+}
+.btn {
+    border: #db8a28 !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+}
+.bg-yellow-btn {
+    border-color: #db8a28 !important;
+}
+.cont {
+    margin-left: 0%;
+}
+.my-lg-0 {
+    margin-left: 25% !important;
+}
+.bg-yello {
+    color: #1E9ACD !important;
+    background-color: #E3E7E8 !important;
+}
+/*.bg-yello:hover {
+    color: #E3E7E8 !important;
+    background-color: #97C5D8 !important;
+}*/
+.bg-whit {
+    color: #E3E7E8 !important;
+    background-color: #97C5D8 !important;
+}
+.bg-whit:hover {
+    color: #97C5D8 !important;
+    background-color: #1E9ACD !important;
+}
+.row {
+    height: 100% !important;
+}
+/*-----------------------------------------------------------------*/
+/*css pag de login*/
+body{
+
+    /* background:rgba(0, 0, 0, 0.76); */
+    }
+    a{
+     text-decoration:none !important;
+     }
+     h1,h2,h3{
+     font-family: 'Kaushan Script', cursive;
+     }
+      .myform{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+      
+    /* background-color: #fff; */
+    background-clip: padding-box;
+    /* border: 1px solid rgba(0,0,0,.2); */
+    border-radius: 1.1rem;
+    outline: 0;
+    max-width: 500px;
+     }
+     .tx-tfm{
+     text-transform:uppercase;
+     }
+     .mybtn{
+     border-radius:50px;
+     }
+    
+     .login-or {
+     position: relative;
+     /*color: #aaa;*/
+     margin-top: 10px;
+     margin-bottom: 10px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     }
+     .span-or {
+     display: block;
+     position: absolute;
+     left: 50%;
+     top: -2px;
+     margin-left: -25px;
+     /* background-color: #fff; */
+     width: 50px;
+     text-align: center;
+     }
+     .hr-or {
+     height: 1px;
+     margin-top: 0px !important;
+     margin-bottom: 0px !important;
+     }
+     .google {
+     /* color:#666; */
+     width:100%;
+     height:40px;
+     text-align:center;
+     outline:none;
+     border: 1px solid lightgrey;
+     }
+      form .error {
+     /* color: #ff0000; */
+     }
+     #second{display:none;}
+
+/*-----------------------------------------------------------------*/
+/*css do caio*/
+
+.ss{
+color: #000000;
+
+}
+.tt{
+    margin-top: 5%;
+}
+.jj{
+color: white;
+}
+
+
+.card{
+   /* margin-top: 5%;*/
+}
+
+
+
+/* cart */
+.quantity {
+    float: left;
+    margin-right: 15px;
+    background-color: #eee;
+    position: relative;
+    width: 80px;
+    overflow: hidden
+}
+
+.quantity input {
+    margin: 0;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    float: right;
+    color: #000;
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+    background-color: #F6F6F6
+}
+
+.quantity input.qty {
+    position: relative;
+    border: 0;
+    width: 100%;
+    height: 40px;
+    padding: 10px 25px 10px 10px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    border-radius: 0;
+    background-clip: padding-box
+}
+
+.quantity .minus, .quantity .plus {
+    line-height: 0;
+    background-clip: padding-box;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-background-size: 6px 30px;
+    -moz-background-size: 6px 30px;
+    color: #bbb;
+    font-size: 20px;
+    position: absolute;
+    height: 50%;
+    border: 0;
+    right: 0;
+    padding: 0;
+    width: 25px;
+    z-index: 3
+}
+
+.quantity .minus:hover, .quantity .plus:hover {
+    background-color: #dad8da
+}
+
+.quantity .minus {
+    bottom: 0
+}
+.shopping-cart {
+    margin-top: 20px;
+}
+
+/*PARTE DO CAIO ^^*/
+/* CSS DO GABRIEL*/
+.adm{
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.p{
+  float: right;
+color: white !important;  
+}
+.azul{
+  background-color: black !important ;
+  color: white !important;
+}
+.azul a:hover{
+ background-color:  !important;
+  color: blue !important;
+}
+.top{
+  margin-top: 1% !important;
+}
+.linha{
+  display: inline-block!important;
+  margin-left: 5%;
+}
+.direita{
+  float:right;
+}
+.direita button a{
+  text-decoration: none;
+  
+}
+div ul li{
+  text-decoration: none;
+}
+
+.esquerda{
+  float: left;
+  margin-right: 10% ;
+}
+
+
+
+
+/* Css Produtos*/
+.product-overlay h2 {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.product-overlay {
+  background: rgb(111, 66, 193, 0.8);
+  top: 0;
+  display: none;
+  height: 0;
+  position: absolute;
+  -webkit-transition: height 500ms ease 0s;
+  transition: height 500ms ease 0s;
+  width: 100%;
+  display: block;
+}
+
+.single-products:hover .product-overlay {
+  display: block;
+  height: 100%;
+}
+
+.product-overlay .overlay-content {
+  bottom: 0;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.product-overlay .add-to-cart {
+  background: #fff;
+  border: 0 none;
+  border-radius: 0;
+  color: #FE980F;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.product-overlay .add-to-cart:hover {
+  background: #fff;
+  color: #FE980F;
+}
+
+.product-overlay p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+
+
+.overlay-gradient {
+position: relative; }
+.overlay-gradient:before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .6;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background: aqua;
+  /* For browsers that do not support gradients */
+  /* For Safari 5.1 to 6.0 */
+  /* For Opera 11.1 to 12.0 */
+  /* For Firefox 3.6 to 15 */
+  background: -webkit-gradient(linear, left top, right bottom, from(#3167eb), to(aqua));
+  background: linear-gradient(to bottom right, #3167eb, aqua);
+  /* Standard syntax */ }
+.overlay-gradient:hover:before {
+  opacity: .9; }
+  
+  .card-product-grid .btn-overlay {
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5); }
+.card-product-grid:hover .btn-overlay {
+  opacity: 1; }
+/* PARTE GABRIEL ^^*/
