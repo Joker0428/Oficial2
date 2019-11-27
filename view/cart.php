@@ -57,7 +57,7 @@
                             </div>
                             <div class="col-2 col-sm-2 col-md-2 text-right">
                                 <button type="button" class="btn btn-outline-danger btn-xs">
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                    <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
                                 </button>
                             </div>
                         </div>

@@ -44,11 +44,12 @@ class DAOProduto{
             return $lista;
         }
     
-        public function buscaPorId($id){
+        public function buscarPorId($i){
     
-            $sql = "SELECT * FROM produto WHERE pk_produto = :id";
+            $sql = "SELECT * FROM produto WHERE pk_produto = :pk";
             $con = Conexao::getInstance()->prepare($sql);
-            $con->bindValue(":id", $id);
+           
+            $con->bindValue(":pk", $i);
             $con->execute();
     
             $obj = $con->fetch(\PDO::FETCH_ASSOC);

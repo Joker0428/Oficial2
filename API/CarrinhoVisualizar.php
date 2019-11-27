@@ -11,10 +11,10 @@
             $carrinho;
             $id = $_GET['id'];
             $add = true; // true->adicione ao carrinho // false-> ja existe no carrinho, nao adicionar
-
+            //$_SESSION['carrinho'] = null;
             // se existir carrinho criado
             if(isset($_SESSION['carrinho'])) {
-                $carrinho = $_SESSION['carinho']; // pega o carrinho
+                $carrinho = $_SESSION['carrinho']; // pega o carrinho
 
             // verifica se o produto ja existe no carrinho
             foreach($carrinho->getItems() as $item) {
@@ -22,7 +22,7 @@
                     $add = false; // produto encontrado, nao adicione
                 }
             }
-            else {
+        }else {
                 // carrinho não existe na session, entao crie
                 $carrinho = new Carrinho();
             }
@@ -33,5 +33,5 @@
             }
             }
         }
-    }
+    
 ?>
