@@ -188,9 +188,27 @@
         break; 
     
        
-        default:
-            $view = "home.php";
-        break; 
+        
+        case 'carrinho':
+            // $obj = new \LOJA\API\UsuarioLogoff;
+            $view = "cart.php";
+            break;
+
+        case 'carrinhoadicionar':
+            $obj = new \LOJA\API\CarrinhoVisualizar;
+            $lista = $obj->lista;
+            $view = "carrinho.php";
+        break;
+
+        case'carrinhoremover':
+            $obj = new \LOJA\API\CarrinhoRemover;
+            $lista = $obj->lista;
+            $view = "cart.php";
+        break;
+
+        case 'carrinho':
+            $view = "cart.php";
+        break;
     }
 
     

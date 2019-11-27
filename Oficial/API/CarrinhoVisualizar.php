@@ -7,6 +7,7 @@
 
     class CarrinhoVisualizar {
         function __construct() {
+        
             $carrinho;
             $id = $_GET['id'];
             $add = true; // true->adicione ao carrinho // false-> ja existe no carrinho, nao adicionar
@@ -19,7 +20,7 @@
             foreach($carrinho->getItems() as $item) {
                 if($item->getProduto()->getId()===$id) { // verificação feita pelo id do produto
                     $add = false; // produto encontrado, nao adicione
-                };
+                }
             }
             else {
                 // carrinho não existe na session, entao crie

@@ -7,6 +7,7 @@
     class Carrinho {
         private $id;
         private $lista;
+        
         public function __construct() {
             $this->lista = [];
         }
