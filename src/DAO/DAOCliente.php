@@ -67,10 +67,11 @@ class DAOCliente{
         return $cliente;
 
     }
-  
-
+    public function deleteAll() {
+        $sql = "delete from cliente";
+        $con =  Conexao::getInstance()->prepare($sql);
+        $con->execute();
+        return "Excluído todos com sucesso";
     }
-
-
-
+}
 ?>

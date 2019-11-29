@@ -1,6 +1,7 @@
 <?php
 
-    namespace LOJA\Model;
+	namespace LOJA\Model;
+	use LOJA\incluedes\Util;
 
 class Cliente{
     private $id;
@@ -43,13 +44,7 @@ class Cliente{
 	}
 
 	public function setCpf($cpf){
-		$cpf = "111.444.777-35";
-		/*if(!preg_match("^([0-9]){3}\.([0-9]){3}\.([0-9]){3}-([0-9]){2}$", $cpf)) {
-			echo "CPF inválido.";
-		}*/
-		if (!preg_match("^([0-9]){3}\.([0-9]){3}\.([0-9]){3}-([0-9]){2}$", $cpf) $cpf===""){ 
-			throw new \Exception('Cpf Inválido');
-		}
+		if(Util::validaCPF($cpf)) throw new \Exception('Cpf Inválido');
 		$this->cpf = $cpf;
 	}
 
