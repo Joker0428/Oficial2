@@ -55,6 +55,34 @@
   </div>
 </div>
 </div>
+<div class="card-deck">
+<?php foreach($lista as $produto) { ?>
+
+<div class=" card-group linha">
+
+
+<div class="col-sm-4 direita">
+<hr>
+<div class="">
+<div class="single-products">
+<div class="productinfo text-center">
+<img width="150" src="<?php echo $url ; ?>../View/img/produtos/<?php echo $produto['imagem'] ?>" />
+        <h2><?php echo number_format($produto['preco'],2,",",".");?></h2>
+        <h5><?php echo $produto['nome']?></h5>
+
+    <h6 class="btn-outline-light"><?php  echo $produto['servico']?><h6>
+                <a href="#" class=" add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+                <hr>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<?php } ?>
+</div>
 <div class='container tt'>
 <div class="card mb-3">
   <img src="img/slide.png" class="card-img-top" alt="...">

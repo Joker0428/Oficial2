@@ -182,7 +182,9 @@
                 break;
             
             // PARTE DOS ADMIN ^^
-        
+         master
+       
+
         default:
             $obj = new \LOJA\API\ProdutoListar;
             $lista = $obj->lista;
@@ -211,6 +213,13 @@
         case 'carrinho':
             $view = "cart.php";
         break;
+
+        default:
+        $obj = new \LOJA\API\ProdutoListar;
+        $lista = $obj->lista;
+        $view = "home.php";
+        break; 
+
     }
 
     
