@@ -182,8 +182,14 @@
                 break;
             
             // PARTE DOS ADMIN ^^
-        
+         master
        
+
+        default:
+            $obj = new \LOJA\API\ProdutoListar;
+            $lista = $obj->lista;
+            $view = "home.php";
+        break; 
     
        
         
