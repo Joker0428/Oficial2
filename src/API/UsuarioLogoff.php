@@ -7,7 +7,7 @@
             unset($_SESSION['usuarioid']); //SESSION é PARA DESTRUI A INFORMAÇÃo para deslogar
             unset($_SESSION['usuarionome']);
             unset($_SESSION);
-            header("location: http://localhost/Oficial/login/adm");
+            header("location: http://localhost/Oficial2/src/login/adm");
 
         }
     }

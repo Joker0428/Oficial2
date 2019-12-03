@@ -14,7 +14,7 @@ class DAOFornecedor{
         $con->bindValue(":cnpj", $fornecedor->getCnpj());
         
         $con->execute();
-        return "Cadastro com sucesso";
+        return "Cadastrado com sucesso";
 
     }
     public function listaFornecedor(){

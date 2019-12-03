@@ -23,7 +23,7 @@
                 };
             }
             else {
-                header("location: http://127.0.0.1/sistema-php-2/home");
+                header("location: http://localhost/Oficial2/src");
             }
             }
         }

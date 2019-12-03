@@ -23,7 +23,8 @@ class Usuario{
     }
 
     public function setNome($nome){
-        $this->nome = $nome;
+        if($nome==="") throw new \Exception("Nome Inválido");
+			$this->nome = $nome;
     }
 
     public function getSenha(){
@@ -31,6 +32,7 @@ class Usuario{
     }
 
     public function setSenha($senha){
+        if($senha==="") throw new \Exception("Senha Inválido");
         $this->senha = $senha;
     }
 }

@@ -182,8 +182,12 @@
                 break;
             
             // PARTE DOS ADMIN ^^
-        
-        case 'home':
+         master
+       
+
+        default:
+            $obj = new \LOJA\API\ProdutoListar;
+            $lista = $obj->lista;
             $view = "home.php";
         break; 
     
@@ -215,6 +219,10 @@
         $lista = $obj->lista;
         $view = "home.php";
         break; 
+
+
+
+
     }
 
     
