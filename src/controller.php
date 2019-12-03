@@ -107,6 +107,12 @@
                 $lista = $obj->lista;
                 $view = "lista-produto.php";
                 break;
+
+                case 'produtobuscar':
+                    $obj = new \LOJA\API\ProdutoBuscaNome;
+                    $lista = $obj->lista;
+                    $view = "lista-produto.php";
+                    break;
                 
                 case 'testelista':
                     $obj = new \LOJA\API\ProdutoListar;
