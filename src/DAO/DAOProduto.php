@@ -77,6 +77,7 @@ class DAOProduto{
             }
             return $lista;
         }
+        
 
     
 }
