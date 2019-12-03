@@ -4,32 +4,28 @@
   
 
 
- <?php foreach($lista as $produto) { ?>
+<div class="card-deck">
 
-    <div class="card-group linha">
-    
+<?php foreach($lista as $produto) { ?>
+   
 
-    <div class="col-sm-4 direita">
-<hr>
-	<div class="product-image-wrapper">
-	<div class="single-products">
-	<div class="productinfo text-center">
-		<img width="150" src="../View/img/produtos/<?php echo $produto['imagem'] ?>" />
-            <h2><?php echo number_format($produto['preco'],2,",",".");?></h2>
-            <h5><?php echo $produto['nome']?></h5>
- </hr>
-				<h6 class="btn-outline-light"><?php  echo $produto['servico']?><h6>
-                    <a href="#" class="btn btn-secondary add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
-                    <hr>
-	
-	
-	</div>
-	</div>
-	</div>
- </div>
- </div>
+  
+  <div class="card">
+  
+    <img width="150" src="../View/img/produtos/<?php echo $produto['imagem'] ?>" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><?php echo $produto['nome']?></h5>
+      <p class="card-text"><?php  echo $produto['servico']?></p>
+      <p class="card-text"><small class="text-muted"><?php echo number_format($produto['preco'],2,",",".");?></small></p>
+      
+    </div>
+   
+  </div>
+  <?php } ?>
 
-    <?php } ?>
+    </div>
+
+ 
    
     <div class="esquerda group-vertical">
      <ul>
@@ -46,11 +42,5 @@
  </ul>
  </div>
  
-    <script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.scrollUp.min.js"></script>
-	<script src="js/price-range.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
   
 <?php include "view/footer.php";?>

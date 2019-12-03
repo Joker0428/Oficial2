@@ -10,7 +10,7 @@
     @$router = $_GET['model'].$_GET['action'];
     $view = "";
 
-    $url = "http://localhost/Oficial";
+    $url = "http://localhost/Oficial2/src";
 
     switch($router){
     //router = departamentolistar
@@ -183,9 +183,7 @@
             
             // PARTE DOS ADMIN ^^
         
-        case 'home':
-            $view = "home.php";
-        break; 
+       
     
        
         
@@ -209,6 +207,13 @@
         case 'carrinho':
             $view = "cart.php";
         break;
+
+        default:
+        $obj = new \LOJA\API\ProdutoListar;
+        $lista = $obj->lista;
+        $view = "home.php";
+        break; 
+
     }
 
     
