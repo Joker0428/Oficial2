@@ -10,12 +10,15 @@
     @$router = $_GET['model'].$_GET['action'];
     $view = "";
 
-<<<<<<< HEAD
+
+  
+
+
     // $url = "http://localhost/Oficial2/src";
     $url = "http://www.qualificaroficina.web70113.uni5.net";
-=======
+
     $url = "http://localhost/Oficial2/src"; 
->>>>>>> 6288f2f0f307e322ea5198522f78943929153e6e
+
 
     switch($router){
     //router = departamentolistar
@@ -191,13 +194,11 @@
                 
                 $view = "form-adm.php";
                 break;
-<<<<<<< HEAD
-=======
+
             
             // PARTE DOS ADMIN ^^
          
        
->>>>>>> 6288f2f0f307e322ea5198522f78943929153e6e
 
  
        

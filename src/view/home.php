@@ -28,7 +28,7 @@
 
 
             
-<div class="card-deck">
+<div class="card-deck ">
   <div class="card">
     <img src="img/alinha.jpg" class="card-img-top" alt="...">
     <div class="card-body">
@@ -55,32 +55,40 @@
   </div>
 </div>
 </div>
-<div class="card-deck saitop ">
+<div class="card-deck  ">
 <?php foreach($lista as $produto) { ?>
 
-<div class="card-group linha tres">
+<div class="card-group linha tres saitop">
 
 
 <div class="col-sm-4 center">
 
-<div class="">
-<div class="single-products">
-<div class="productinfo text-center saitop">
+
+<div class="single-products ">
+<div class="productinfo text-center  ">
 <img width="150" src="<?php echo $url ; ?>../View/img/produtos/<?php echo $produto['imagem'] ?>" />
+</div>
+</div>
+</div>
+<div class="card-body">
         <h4 class="text-center"><?php echo $produto['nome']?></h4>
-        <h5 class="text-center"><?php echo number_format($produto['preco'],2,",",".");?></h5>
+        <h5 class="text-center">R$<?php echo number_format($produto['preco'],2,",",".");?></h5>
 
    <!-- <h6 class="no-centro"><?php // echo $produto['servico']?><h6>-->
-                <a href="#" class="btn-group btn-group-toggle   add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+     
+                <a href="#" class=" btn btn-primary   add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao Carrinho</a>
                 
 
 
 </div>
+
 </div>
-</div>
-</div>
-</div>
+
+
+
+
 <?php } ?>
+
 </div>
 <div class='container tt'>
 <div class="card mb-3">
