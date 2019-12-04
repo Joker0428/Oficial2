@@ -181,17 +181,8 @@
                 
                 $view = "form-adm.php";
                 break;
-            
-            // PARTE DOS ADMIN ^^
-         master
-       
 
-        default:
-            $obj = new \LOJA\API\ProdutoListar;
-            $lista = $obj->lista;
-            $view = "home.php";
-        break; 
-    
+ 
        
         
         case 'carrinho':
@@ -227,7 +218,7 @@
     }
 
     
-    include "view/{$view}";
+    include "View/{$view}";
 
 ?>
 
