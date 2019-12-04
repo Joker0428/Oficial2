@@ -55,24 +55,24 @@
   </div>
 </div>
 </div>
-<div class="card-deck">
+<div class="card-deck saitop ">
 <?php foreach($lista as $produto) { ?>
 
-<div class=" card-group linha">
+<div class="card-group linha tres">
 
 
-<div class="col-sm-4 direita">
-<hr>
+<div class="col-sm-4 center">
+
 <div class="">
 <div class="single-products">
-<div class="productinfo text-center">
+<div class="productinfo text-center saitop">
 <img width="150" src="<?php echo $url ; ?>../View/img/produtos/<?php echo $produto['imagem'] ?>" />
-        <h2><?php echo number_format($produto['preco'],2,",",".");?></h2>
-        <h5><?php echo $produto['nome']?></h5>
+        <h4 class="text-center"><?php echo $produto['nome']?></h4>
+        <h5 class="text-center"><?php echo number_format($produto['preco'],2,",",".");?></h5>
 
-    <h6 class="btn-outline-light"><?php  echo $produto['servico']?><h6>
-                <a href="#" class=" add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
-                <hr>
+   <!-- <h6 class="no-centro"><?php // echo $produto['servico']?><h6>-->
+                <a href="#" class="btn-group btn-group-toggle   add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+                
 
 
 </div>
@@ -80,7 +80,6 @@
 </div>
 </div>
 </div>
-
 <?php } ?>
 </div>
 <div class='container tt'>
