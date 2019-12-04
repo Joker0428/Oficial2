@@ -43,6 +43,12 @@ class DAOServico{
         return $servico;
 
     }
+    public function deleteAll() {
+        $sql = "delete from servico";
+        $con =  Conexao::getInstance()->prepare($sql);
+        $con->execute();
+        return "Excluído todos com sucesso";
+    }
 }
 
 

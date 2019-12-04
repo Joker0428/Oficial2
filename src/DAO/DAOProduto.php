@@ -62,6 +62,12 @@ class DAOProduto{
 
             return $produto;
         }
+<<<<<<< HEAD
+        public function buscaPorNome($busca)
+        {
+            $sql = "SELECT * FROM produto WHERE nome LIKE = %:busca%";
+            $con = Conexao::getInstance()->prepare($sql);
+=======
         public function buscaPorNome($busca){
         
             $sql = "SELECT * FROM produto WHERE nome LIKE :busca";
@@ -78,7 +84,20 @@ class DAOProduto{
             return $lista;
         }
         
+>>>>>>> 6288f2f0f307e322ea5198522f78943929153e6e
 
+            $con->bindValue(":busca", $busca);
+            $con->execute();
     
-}
+            $obj = $con->fetch(\PDO::FETCH_ASSOC);
+
+            $produto = new Produto();
+            $produto->setId($obj['pk_produto']);
+            $produto->setNome($obj['nome']);
+            $produto->setPreco($obj['preco']);
+            $produto->setImagem($obj['imagem']);
+
+            return $produto;
+        }
+    }
 ?>

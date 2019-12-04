@@ -1,4 +1,4 @@
-<?php include "view/mensagem.php"; ?>
+<?php include "View/mensagem.php"; ?>
 <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
 
 <!------ Include the above in your HEAD tag ---------->
