@@ -10,7 +10,7 @@
     @$router = $_GET['model'].$_GET['action'];
     $view = "";
 
-    $url = "http://localhost/Oficial2/src"; 
+   $url = "http://localhost/Oficial2/src"; 
 
     switch($router){
     //router = departamentolistar
