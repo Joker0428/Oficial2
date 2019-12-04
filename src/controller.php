@@ -10,8 +10,12 @@
     @$router = $_GET['model'].$_GET['action'];
     $view = "";
 
+<<<<<<< HEAD
     // $url = "http://localhost/Oficial2/src";
     $url = "http://www.qualificaroficina.web70113.uni5.net";
+=======
+    $url = "http://localhost/Oficial2/src"; 
+>>>>>>> 6288f2f0f307e322ea5198522f78943929153e6e
 
     switch($router){
     //router = departamentolistar
@@ -108,6 +112,12 @@
                 $lista = $obj->lista;
                 $view = "lista-produto.php";
                 break;
+
+                case 'produtobuscar':
+                    $obj = new \LOJA\API\ProdutoBuscaNome;
+                    $lista = $obj->lista;
+                    $view = "lista-produto.php";
+                    break;
                 
                 case 'testelista':
                     $obj = new \LOJA\API\ProdutoListar;
@@ -181,6 +191,13 @@
                 
                 $view = "form-adm.php";
                 break;
+<<<<<<< HEAD
+=======
+            
+            // PARTE DOS ADMIN ^^
+         
+       
+>>>>>>> 6288f2f0f307e322ea5198522f78943929153e6e
 
  
        
@@ -206,11 +223,7 @@
             $view = "cart.php";
         break;
 
-        default:
-        $obj = new \LOJA\API\ProdutoListar;
-        $lista = $obj->lista;
-        $view = "home.php";
-        break; 
+     
 
 
 
