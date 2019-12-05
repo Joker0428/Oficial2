@@ -227,6 +227,8 @@
      
 
 default:
+$obj = new \LOJA\API\ProdutoListar;
+                    $lista = $obj->lista;
 $view = "home.php";
 break;
 
