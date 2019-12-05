@@ -85,16 +85,16 @@
                     </ul>
                 </div><!-- social media -->
                 <p class="description description-second">ou use sua conta do site:</p>
-                <form class="form">
+                <form class="form" method="post" action="cliente">
                 
                     <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="Email">
+                        <input type="nome" name="nome" placeholder="Nome">
                     </label>
                 
                     <label class="label-input" for="">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Password">
+                        <input type="senha" name="senha" placeholder="Senha">
                     </label>
                 
                     <a class="password" href="#">Esqueceu sua senha ?</a>
