@@ -311,7 +311,7 @@ body {
         position: absolute;
         left: -10px;
         top: -20px;
-        background: #f2d900;
+        background: #89939C;
         text-align: center;
         border-radius: 30px 30px 30px 30px; 
         color: #000;
@@ -324,7 +324,7 @@ body {
         position: absolute;
         right: -10px;
         top: -20px;
-        background: #ff4444;
+        background: #E3E7E8;
         border-radius: 50%;
         text-align: center;
         color: #fff;      
@@ -336,7 +336,7 @@ body {
 
 
 #ads .card-detail-badge {      
-        background: #f2d900;
+        background: #97C5D8;
         text-align: center;
         border-radius: 30px 30px 30px 30px;
         color: #000;
@@ -372,20 +372,20 @@ body {
         font-size: 16px;
         line-height: 35px;
         text-align: center;
-        border: 3px solid #bbb;
+        border: 3px solid #1E9ACD;
         display: block;
         text-decoration: none;
         margin: 20px auto 1px auto;
         color: #000;
         overflow: hidden;        
         position: relative;
-        background-color: #1E9ACD;
+        background-color: #bbb;
     }
 
 #ads .ad-btn:hover {
             background-color: #97C5D8;
             color: #1e1717;
-            border: 2px solid #e6de08;
+            border: 2px solid #2B3D4D;
             background: transparent;
             transition: all 0.3s ease;
             box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
