@@ -23,7 +23,9 @@ class CalcularFrete{
             $altura,$largura,$comprimento,$valorDeclarado);
    
             //echo $frete->getUrl();
+
             $xml = simplexml_load_file($frete->getUrl());
+            //echo print_r($xml);
             $frete->setValor($xml->cServico->Valor);
             $frete->setPrazoEntrega($xml->cServico->PrazoEntrega);
             

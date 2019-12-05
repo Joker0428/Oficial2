@@ -197,12 +197,18 @@
 
             
             // PARTE DOS ADMIN ^^
-         
-       
+
+         //PARTE DE FRETE ~~
+       case 'fretecalcular':
+        $obj = new \LOJA\API\CalcularFrete;
+        $frete = $obj->frete;
+
+        $view = "cart.php";
+       break;
 
  
        
-        
+        //PARTE DE CALCULAR FRETE ^^
         case 'carrinho':
             // $obj = new \LOJA\API\UsuarioLogoff;
             $view = "cart.php";
