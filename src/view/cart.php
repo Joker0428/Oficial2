@@ -101,7 +101,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div class="a">
 </div>
 <?php
                         if(isset($_POST['cep'])){
