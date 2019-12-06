@@ -80,6 +80,12 @@
             <div class="card-footer">
                 <div class="coupon col-md-5 col-sm-5 no-padding-left pull-left">
                     <div class="row">
+                    <form method="post" action="<?php echo $url;?>/frete/calcular">
+                        <label>Frente</label>
+                        <input type="text" size="20" name="cep"/>
+                        <button class>Calcular</button>
+                        </form>
+                     
                         <div class="col-6">
                             <input type="text" class="form-control" placeholder="Código do cupom">
                         </div>
@@ -95,6 +101,14 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div class="a">
 </div>
-<?php include "View/footer.php" ?>
+
+<?php
+                        if(isset($_POST['cep'])){
+                            echo "<p>Preço: R$ ".$frete->getValor()."</p>";
+                            echo "<p>Entrega:  ".$frete->getPrazoEntrega()." dias</p>";
+                        }
+                         ?>
+<?php include "view/footer.php" ?>
+
