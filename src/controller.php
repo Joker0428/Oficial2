@@ -10,12 +10,31 @@
     @$router = $_GET['model'].$_GET['action'];
     $view = "";
 
+    $servidor = "TEST"; //PROD OU TEST
+
+    if($servidor=="TEST"){
+        $url = "http://localhost/Oficial2/src";
+        $serverHost = "localhost";
+        $serverDB = "bigode";
+        $serverUser = "root";
+        $serverPass= "";
+        $cepOrigem= "26298045";
+
+    }else{
+        $url = "http://www.qualificaroficina.web70113.uni5.net";
+        $serverHost = "ftp.web70113.uni5.net";
+        $serverDB = "qualificaroficina";
+        $serverUser = "qualificaroficina";
+        $serverPass= "senac10058";
+        $cepOrigem= "26298045";
+    }
+
 
   
 
 
     // $url = "http://localhost/Oficial2/src";
-    $url = "http://www.qualificaroficina.web70113.uni5.net";
+    //$url = "http://www.qualificaroficina.web70113.uni5.net";
 
     // $url = "http://localhost/Oficial2/src"; 
 
