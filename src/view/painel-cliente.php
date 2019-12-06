@@ -1,4 +1,4 @@
-<?php include "view/header.php";?>
+<?php include "View/header.php";?>
 <link rel="stylesheet" href="../css/estilo.css">
 <div>
 <?php  echo $_SESSION['clientenome'];?>
@@ -17,4 +17,4 @@
     
 
 
-<?php include "view/footer.php";?>
+<?php include "View/footer.php";?>

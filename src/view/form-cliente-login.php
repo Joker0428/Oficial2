@@ -1,4 +1,4 @@
-<?php include "view/header.php";?>
+<?php include "View/header.php";?>
 
 
 
@@ -104,4 +104,4 @@
         </div><!-- second-content -->
     
     <script src="../3js/app.js"></script>
-<?php include "view/footer.php";?>
+<?php include "View/footer.php";?>

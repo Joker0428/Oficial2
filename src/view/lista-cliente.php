@@ -1,5 +1,5 @@
 
-<?php include "view/header-adm.php";?>
+<?php include "View/header-adm.php";?>
 <table class="table">
     <thead>
         <tr>
@@ -24,5 +24,5 @@
     </tbody>
 </table>
 
-<?php include "view/footer-adm.php";?>
+<?php include "View/footer-adm.php";?>
 

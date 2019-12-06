@@ -1,5 +1,5 @@
 
-<?php include "view/header.php";?>
+<?php include "View/header.php";?>
 
   
 
@@ -104,4 +104,4 @@
  </div>
  
   
-<?php include "view/footer.php";?>
+<?php include "View/footer.php";?>

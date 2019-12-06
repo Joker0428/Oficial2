@@ -1,4 +1,4 @@
-<?php include "view/header-adm.php";?>
+<?php include "View/header-adm.php";?>
 
 <h1>CADASTRO DO ADMIN</h1>
     
@@ -41,4 +41,4 @@
 </form>
 
 
-<?php include "view/footer-adm.php";?>
+<?php include "View/footer-adm.php";?>

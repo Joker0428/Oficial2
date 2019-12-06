@@ -1,4 +1,4 @@
-<?php include "view/header.php" ?>
+<?php include "View/header.php" ?>
 <link rel="stylesheet" href="css/estilo.css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -103,6 +103,7 @@
             </div>
         </div class="a">
 </div>
+
 <?php
                         if(isset($_POST['cep'])){
                             echo "<p>Preço: R$ ".$frete->getValor()."</p>";
@@ -110,3 +111,4 @@
                         }
                          ?>
 <?php include "view/footer.php" ?>
+
