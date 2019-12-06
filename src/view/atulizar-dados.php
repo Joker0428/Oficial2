@@ -1,4 +1,4 @@
-<?php include "view/header.php";?>
+<?php include "View/header.php";?>
 <form>
 <div class="col-md-6">
 <fieldset class="pf-dados">
@@ -31,4 +31,4 @@
 </div>
 
 </form>
-<?php include "view/footer.php";?>
+<?php include "View/footer.php";?>

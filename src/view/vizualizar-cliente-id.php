@@ -1,4 +1,4 @@
-<?php include "view/header.php";?>
+<?php include "View/header.php";?>
 <h1>Cliente Vizualizar(ID)</h1>
     
 <form class="form-horizontal" method="post" action="cadastrar">
@@ -54,4 +54,4 @@
 
 </fieldset>
 </form>
-<?php include "view/footer.php";?>
+<?php include "View/footer.php";?>

@@ -1,4 +1,4 @@
-<?php include "view/header-adm.php";?>
+<?php include "View/header-adm.php";?>
 <link rel="stylesheet" href="../css/estilo.css">
 
 
@@ -28,4 +28,4 @@
     
 
 
-<?php include "view/footer-adm.php";?>
+<?php include "View/footer-adm.php";?>

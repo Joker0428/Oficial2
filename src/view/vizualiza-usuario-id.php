@@ -1,4 +1,4 @@
-<?php include "view/header-adm.php";?>
+<?php include "View/header-adm.php";?>
 <h1>USUARIO</h1>
     
 <form class="form-horizontal" method="post" action="vizualizar">
@@ -38,6 +38,6 @@
 
 </fieldset>
 </form>
-<?php include "view/footer-adm.php";?>
+<?php include "View/footer-adm.php";?>
 
 
