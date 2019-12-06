@@ -110,5 +110,5 @@
                             echo "<p>Entrega:  ".$frete->getPrazoEntrega()." dias</p>";
                         }
                          ?>
-<?php include "view/footer.php" ?>
+<?php include "View/footer.php" ?>
 
