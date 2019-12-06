@@ -15,9 +15,9 @@
 
 
     // $url = "http://localhost/Oficial2/src";
-   // $url = "http://www.qualificaroficina.web70113.uni5.net";
+    $url = "http://www.qualificaroficina.web70113.uni5.net";
 
-     $url = "http://localhost/Oficial2/src"; 
+    // $url = "http://localhost/Oficial2/src"; 
 
 
     switch($router){
