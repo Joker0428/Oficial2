@@ -1,11 +1,5 @@
 <?php include "View/header.php"; ?>
 <link rel="stylesheet" href="css/estilo.css">
-
-<h1></h1>
-
-
-
-
             
 <div class="card-deck ">
   <div class="card">
