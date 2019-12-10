@@ -1,9 +1,5 @@
 <?php
     use LOJA\incluedes\Config;
-<<<<<<< HEAD:www/controller.php
-=======
-    
->>>>>>> 79c15cfd61cb275314e082ac256d5aecbf6e0bd6:src/controller.php
     require "incluedes/autoload.php";
     session_start();
     
