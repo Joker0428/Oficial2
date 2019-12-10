@@ -1,5 +1,5 @@
 {
-    "remotePath": "./",
+    "remotePath": "/",
     "host": "ftp.web70113.uni5.net",
     "username": "qualificaroficina",
     "password": "senac@10058",
@@ -16,7 +16,10 @@
     "ignore": [
         "\\.vscode",
         "\\.git",
-        "\\.DS_Store"
+        "\\.DS_Store",
+        "\\.vendor",
+        "\\.tests",
+        "\\.Config.php"
     ],
     "generatedFiles": {
         "extensionsToInclude": [
