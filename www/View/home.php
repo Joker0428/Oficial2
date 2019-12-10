@@ -44,7 +44,7 @@
             <div class="card-image">
                 <span class="card-notify-badge">Ótimo Rendimento</span>
                 <span class="card-notify-year">2019</span>
-                <img class="img-fluid" src="<?php echo $url;['imagem'] ?>../View/img/produtos/<?php echo $produto['imagem'] ?>" alt="Alternate Text" />
+                <img class="img-fluid" src="<?php echo $url;['imagem'] ?>/View/img/produtos/<?php echo $produto['imagem'] ?>" alt="Alternate Text" />
             </div>
             <div class="card-image-overlay m-auto">
                 <span class="card-detail-badge">Gratis:<?php  echo $produto['servico']?></span>

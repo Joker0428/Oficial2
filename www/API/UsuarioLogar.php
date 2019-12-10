@@ -22,7 +22,7 @@ use LOJA\Model\Usuario;
                         $_SESSION['usuarioid'] = $result['id'];
                         $_SESSION['usuarionome'] = $result['nome'];
 
-                        header("location: http://localhost/Oficial2/www/painel/adm");
+                        header("location: http://www.qualificaroficina.web70113.uni5.net/painel/adm");
                     }else{
                         $this->msg = "Usuário/Senha inválidos";
                     }

@@ -23,7 +23,7 @@
                 };
             }
             else {
-                header("location: http://localhost/Oficial2/src");
+                header("location: http://www.qualificaroficina.web70113.uni5.net");
             }
             }
         }

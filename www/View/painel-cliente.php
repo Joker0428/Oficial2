@@ -5,10 +5,10 @@
     <!-- Button trigger modal -->
 </div>
 <div class="direita">
-<button type="button" class="btn btn-warning" ><a href="<?php echo $url; ?>#">Meu Cadastro</a></button>
+<button type="button" class="btn btn-warning" ><a href="<?php echo $url; ?>">Meu Cadastro</a></button>
 </div>
    <p></p>
-    <a class="btn btn-primary" href="http://localhost/Oficial2/www/painel/logoff">Sair</a>
+    <a class="btn btn-primary" href="http://www.qualificaroficina.web70113.uni5.net/painel/logoff">Sair</a>
 
 
   
