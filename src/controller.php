@@ -1,8 +1,8 @@
 <?php 
-     require "incluedes/autoload.php";
-     session_start();
-
-   //capturando os dados da url
+    require "incluedes/autoload.php";
+    session_start();
+    
+    //capturando os dados da url
     //ex.: admin/departamento/cadastrar/listar
     //model=departamento & action-listar
     
@@ -10,34 +10,12 @@
     @$router = $_GET['model'].$_GET['action'];
     $view = "";
 
-    $servidor = "TEST"; //PROD OU TEST
-
-    if($servidor=="TEST"){
-        $url = "http://localhost/Oficial2/src";
-        $serverHost = "localhost";
-        $serverDB = "bigode";
-        $serverUser = "root";
-        $serverPass= "";
-        $cepOrigem= "26298-045";
-
-    }else{
-        $url = "http://www.qualificaroficina.web70113.uni5.net";
-        $serverHost = "ftp.web70113.uni5.net";
-        $serverDB = "qualificaroficina";
-        $serverUser = "qualificaroficina";
-        $serverPass= "senac10058";
-        $cepOrigem= "26298-045";
-    }
-
-
-  
-
+    $config = new Config();
+    $url = $config->url;
 
     // $url = "http://localhost/Oficial2/src";
-    $url = "http://www.qualificaroficina.web70113.uni5.net";
+    // $url = "http://www.qualificaroficina.web70113.uni5.net";
     $view = "";
-
-    // $url = "http://localhost/Oficial2/src"; 
 
 
     switch($router){
