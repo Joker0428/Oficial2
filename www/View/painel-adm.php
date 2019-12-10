@@ -19,7 +19,7 @@
     <!-- Button trigger modal -->
 
    <p></p>
-    <a class="btn btn-primary" href="http://localhost/Oficial/paineladm/logoff">Sair</a>
+    <a class="btn btn-primary" href="http://localhost/Oficial2/www/paineladm/logoff">Sair</a>
 
 
   

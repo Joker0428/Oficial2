@@ -7,7 +7,7 @@
             unset($_SESSION['clienteid']); //SESSION é PARA DESTRUI A INFORMAÇÃo para deslogar
             unset($_SESSION['clientenome']);
             unset($_SESSION);
-            header("location: http://localhost/Oficial/login/cliente");
+            header("location: http://localhost/Oficial2/www/login/cliente");
 
         }
     }
