@@ -34,7 +34,7 @@
   </div>
 </div>
 
-
+<!--Minha configação GB -->
 <div class="row " id="ads">
     <?php foreach($lista as $produto) { ?>
     
@@ -62,6 +62,7 @@
  
     <?php } ?>
     </div>
+    <!--Minha configação GB ^^ -->
 <div class='container tt'>
 <div class="card mb-3">
   <img src="img/slide.png" class="card-img-top" alt="...">

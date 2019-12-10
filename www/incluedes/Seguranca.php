@@ -5,7 +5,7 @@ class Seguranca{
   
     public static function restritoAdm(){
         if(!isset($_SESSION['usuarioid'])){
-            header("location: http://localhost/Oficial/login/adm");
+            header("location: http://localhost/Oficial2/www/login/adm");
         }
     }
 }
