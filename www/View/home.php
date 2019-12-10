@@ -33,13 +33,13 @@
     </div>
   </div>
 </div>
-</div>
 
-<div class="row" id="ads">
+
+<div class="row " id="ads">
     <?php foreach($lista as $produto) { ?>
     
     <!-- Category Card -->
-    <div class="col-md-4 ">
+    <div class="col-md-4 top">
         <div class="card rounded">
             <div class="card-image">
                 <span class="card-notify-badge">Ótimo Rendimento</span>
