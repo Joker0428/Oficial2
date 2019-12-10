@@ -60,7 +60,7 @@
             <div class="first-column">
                 <h2 class="title title-primary">Olá :)</h2>
                 <p class="description description-primary">Insira seus dados pessoais</p>
-                <p class="description description-primary">Começe a assitir seus filmes conosco</p>
+                <p class="description description-primary">Começe a usufruir Dos nosso Benefícios</p>
                 <button id="signup" class="btn btn-primary">Registrar</button>
             </div>
             <div class="second-column">
