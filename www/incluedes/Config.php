@@ -2,7 +2,7 @@
     namespace LOJA\incluedes;
     class Config {
         private $servidor = "TEST"; // PROD OU TEST
-        public $url = "http://localhost/Oficial2/src";
+        public $url = "http://localhost/Oficial2/www";
         public $serverHost;
         public $serverDB;
         public $serverUser;
@@ -11,6 +11,7 @@
 
         public function __construct() {
             if($this->servidor=="TEST") {
+                // $this->url = "http://localhost/Oficial2/www";
                 $this->serverHost = "localhost";
                 $this->serverDB = "bigode";
                 $this->serverUser = "root";

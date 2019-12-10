@@ -60,7 +60,7 @@ class ComposerStaticInitc95405d9abbfdeef918671e3d6c59f88
         ),
         'LOJA\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => __DIR__ . '/../..' . '/www',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
