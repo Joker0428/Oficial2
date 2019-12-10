@@ -1,4 +1,6 @@
-<?php 
+<?php
+    use LOJA\incluedes\Config;
+    
     require "incluedes/autoload.php";
     session_start();
     
