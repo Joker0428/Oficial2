@@ -7,7 +7,7 @@ use LOJA\Model\Cliente;
 class DAOCliente{
 
 
-    public function cadastrar(Cliente $cliente){
+    /*public function cadastrar(Cliente $cliente){
 
         
         $sql = "INSERT INTO cliente
@@ -22,7 +22,7 @@ class DAOCliente{
         $con->bindValue(":email", $cliente->getEmail());
         $con->bindValue(":senha", $cliente->getSenha());
         $con->execute();
-        return "Cadastrado com sucesso";
+        return "Cadastrado com sucesso";*/
 
     public $lastId;
     public function cadastrar(Cliente $cliente){
