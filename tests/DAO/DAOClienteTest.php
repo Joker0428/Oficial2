@@ -13,6 +13,7 @@
         }
         public function testCadastro()
         {
+            // dados
             $c = new Cliente();
             // $c->setId();
             $c->setNome('Eliakin');
@@ -22,10 +23,13 @@
             $c->setTelefone('(21)1231-2132');
             $c->setEmail('eliakin@email.com');
             $c->setSenha('12345');
-
+            //execução
             $DAO = new DAOCliente();
             $msg = $DAO->cadastrar($c);
-            $this->assertEquals($msg, "Cadastrado com sucesso");
+            // testa resultados
+            $this->assertEquals($msg, "Cadastrado com Sucesso");
+            // remove os dados gerados
+            $DAO->deleteFromId($DAO->lastId);
         }
     }
 ?>
