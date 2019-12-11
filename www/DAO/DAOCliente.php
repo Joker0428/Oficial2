@@ -5,7 +5,10 @@ use LOJA\Model\Conexao;
 use LOJA\Model\Cliente;
 
 class DAOCliente{
+
     public function cadastrar(Cliente $cliente){
+
+        
         $sql = "INSERT INTO cliente
         VALUES (default, :nome, :cpf, :cep, :endereco, :telefone, :email, :senha)";
         
