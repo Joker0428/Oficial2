@@ -22,6 +22,7 @@ class Servico{
     }
 
     public function setNome($nome){
+        if($nome==="") throw new \Exception("Nome Inválido");
         $this->nome = $nome;
     }
 

@@ -3,18 +3,40 @@ namespace LOJA\DAO;
 use LOJA\Model\Conexao;
 use LOJA\Model\Servico;
 
+
 class DAOServico{
+
+    public $lastId;
+
     public function cadastrar(Servico $servico){
-        $sql = "INSERT INTO servico
-        VALUES (default, :nome)";
+        $pdo = Conexao::getInstance();
+        $pdo->beginTransaction();
+
+        try{
+             $con = $pdo->prepare(
+              "INSERT INTO servico
+                    VALUES (default, :nome)"
+           );
+
         
-        $con = Conexao::getInstance()->prepare($sql);
         $con->bindValue(":nome", $servico->getNome());
         $con->execute();
-
-        return "Cadastro o Serviço com Sucesso";
-
+        
+        
+        $this->lastId = $pdo->lastInsertId(); // Retorna o id do cliente cadastrado
+        $pdo->commit(); // finaliza a transação
+        return "Cadastrado com Sucesso";
+        }
+        catch(Exception $e) {
+            $this->lastId = 0;
+            $pdo->rollback();
+            return "Erro ao Cadastrar";
+        }
     }
+     
+
+    
+
     public function listaServico(){
         $sql = "SELECT * FROM servico";
         $con = Conexao::getInstance()->prepare($sql);
@@ -48,6 +70,12 @@ class DAOServico{
         $con =  Conexao::getInstance()->prepare($sql);
         $con->execute();
         return "Excluído todos com sucesso";
+    }
+    public function deleteFromId($id) {
+        $sql = "delete from servico where pk_servico = {$id}";
+        $con = Conexao::getInstance()->prepare($sql);
+        $con->execute();
+        return "Excluído Todos com sucesso";
     }
 }
 
