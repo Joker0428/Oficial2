@@ -1,7 +1,7 @@
 <?php
     namespace LOJA\incluedes;
     class Config {
-        private $servidor = "PROD"; // PROD OU TEST
+        private $servidor = "TEST"; // PROD OU TEST
         public $url;
         public $serverHost;
         public $serverDB;
