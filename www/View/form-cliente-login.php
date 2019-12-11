@@ -3,11 +3,16 @@
 
 
 <div class="container">
+
 <link rel="stylesheet" href="../2css/style.css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        
         <div class="content first-content">
+        
             <div class="first-column">
+            
                 <h2 class="title title-primary">Bem-vindo de volta!</h2>
                 <p class="description description-primary">Para manter-se conectado conosco</p>
                 <p class="description description-primary">faça o login com suas informações pessoais</p>

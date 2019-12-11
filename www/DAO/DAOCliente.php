@@ -5,8 +5,28 @@ use LOJA\Model\Conexao;
 use LOJA\Model\Cliente;
 
 class DAOCliente{
+
+
+    public function cadastrar(Cliente $cliente){
+
+        
+        $sql = "INSERT INTO cliente
+        VALUES (default, :nome, :cpf, :cep, :endereco, :telefone, :email, :senha)";
+        
+        $con = Conexao::getInstance()->prepare($sql);
+        $con->bindValue(":nome", $cliente->getNome());
+        $con->bindValue(":cpf", $cliente->getCpf());
+        $con->bindValue(":cep", $cliente->getCep());
+        $con->bindValue(":endereco", $cliente->getEndereco());
+        $con->bindValue(":telefone", $cliente->getTelefone());
+        $con->bindValue(":email", $cliente->getEmail());
+        $con->bindValue(":senha", $cliente->getSenha());
+        $con->execute();
+        return "Cadastrado com sucesso";
+
     public $lastId;
     public function cadastrar(Cliente $cliente){
+
 
         $pdo = Conexao::getInstance(); // Cria objeto de conexão
         $pdo->beginTransaction(); // Inicia a transação

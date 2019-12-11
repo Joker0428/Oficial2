@@ -18,7 +18,7 @@
             // $c->setId();
             $c->setNome('Eliakin');
             $c->setCpf('123.456.789-10');
-            $c->setCep('12.345-678');
+            $c->setCep('23030-460');
             $c->setEndereco('Rua dos bobos');
             $c->setTelefone('(21)1231-2132');
             $c->setEmail('eliakin@email.com');
