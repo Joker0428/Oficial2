@@ -6,6 +6,7 @@ use LOJA\Model\Cliente;
 
 class DAOCliente{
 
+
     public function cadastrar(Cliente $cliente){
 
         
@@ -23,7 +24,37 @@ class DAOCliente{
         $con->execute();
         return "Cadastrado com sucesso";
 
+    public $lastId;
+    public function cadastrar(Cliente $cliente){
+
+
+        $pdo = Conexao::getInstance(); // Cria objeto de conexão
+        $pdo->beginTransaction(); // Inicia a transação
+
+        try{
+            $con = $pdo->prepare(
+                "INSERT INTO cliente VALUES (default, :nome, :cpf, :cep, :endereco, :telefone, :email, :senha)"
+            );
+            $con->bindValue(":nome", $cliente->getNome());
+            $con->bindValue(":cpf", $cliente->getCpf());
+            $con->bindValue(":cep", $cliente->getCep());
+            $con->bindValue(":endereco", $cliente->getEndereco());
+            $con->bindValue(":telefone", $cliente->getTelefone());
+            $con->bindValue(":email", $cliente->getEmail());
+            $con->bindValue(":senha", $cliente->getSenha());
+            $con->execute();
+
+        $this->lastId = $pdo->lastInsertId(); // Retorna o id do cliente cadastrado
+        $pdo->commit(); // finaliza a transação
+        return "Cadastrado com Sucesso";
+        }
+        catch(Exception $e) {
+            $this->lastId = 0;
+            $pdo->rollback();
+            return "Erro ao Cadastrar";
+        }
     }
+    //
     public function buscoPorNomeSenha(Cliente $cliente){
         $sql = "SELECT pk_cliente as id,nome 
         FROM cliente WHERE nome = :nome AND 
@@ -75,6 +106,12 @@ class DAOCliente{
         $con =  Conexao::getInstance()->prepare($sql);
         $con->execute();
         return "Excluído todos com sucesso";
+    }
+    public function deleteFromId($id) {
+        $sql = "delete from cliente where pk_cliente = {$id}";
+        $con = Conexao::getInstance()->prepare($sql);
+        $con->execute();
+        return "Excluído Todos com sucesso";
     }
 }
 ?>
