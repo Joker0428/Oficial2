@@ -2,14 +2,14 @@
     use PHPUnit\Framework\TestCase;
     use LOJA\Model\Pedido;
     use LOJA\Model\Produto;
-    use LOJA\Model\servico;
-    use Loja\Model\Cliente;
-    use Loja\Model\Carrinho;
-    use Loja\Model\Item;
-    use Loja\DAO\DAOPedido;
-    use Loja\DAO\DAOProduto;
-    use Loja\DAO\DAOServico;
-    use Loja\DAO\DAOCliente;
+    use LOJA\Model\Servico;
+    use LOJA\Model\Cliente;
+    use LOJA\Model\Carrinho;
+    use LOJA\Model\Item;
+    use LOJA\DAO\DAOPedido;
+    use LOJA\DAO\DAOProduto;
+    use LOJA\DAO\DAOServico;
+    use LOJA\DAO\DAOCliente;
 
     class DAOPedidoTest extends TestCase
     {

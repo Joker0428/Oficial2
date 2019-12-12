@@ -3,7 +3,7 @@
     use LOJA\Model\Produto;
     use LOJA\DAO\DAOProduto;
     use LOJA\Model\Servico;
-    use LOJA\DAO\DAOProduto;
+  
     use LOJA\DAO\DAOServico;
 
     class DAOProdutoTests extends TestCase
