@@ -231,15 +231,16 @@ color: white;
 color: white !important;  
 }
 .azul{
-  background-color: black !important ;
+  background-color: #428bca !important ;
   color: white !important;
 }
-.azul a:hover{
- background-color:  !important;
-  color: blue !important;
-}
+.azul1{
+    background-color: #4281cb !important ;
+    color: white !important;
+  }
+
 .top{
-  margin-top: 1% !important;
+  margin-top: 3% !important;
 }
 .linha{
   display: inline-block!important;
@@ -277,7 +278,7 @@ div ul li{
   }
 
   .saitop{
-    margin-top: 2%;
+    margin-top: 2% !important;
   }
   .ficabot{
     position: relative;
@@ -327,7 +328,7 @@ body {
         background: #E3E7E8;
         border-radius: 50%;
         text-align: center;
-        color: #fff;      
+        color: #bbbb;      
         font-size: 14px;      
         width: 50px;
         height: 50px;    
@@ -380,6 +381,7 @@ body {
         overflow: hidden;        
         position: relative;
         background-color: #bbb;
+        transition: background-color .5s;
     }
 
 #ads .ad-btn:hover {
@@ -387,8 +389,9 @@ body {
             color: #1e1717;
             border: 2px solid #2B3D4D;
             background: transparent;
-            transition: all 0.3s ease;
+            transition: all 0.5s ease;
             box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+            transition: background-color .5s;
         }
 
 #ads .ad-title h5 {

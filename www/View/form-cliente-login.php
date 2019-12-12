@@ -40,24 +40,10 @@
                     </ul>
                 </div><!-- social media -->
                 <p class="description description-second">Ou use seu email para registrar:</p>
-                <form class="form">
-                    <label class="label-input" for="">
-                        <i class="far fa-user icon-modify"></i>
-                        <input type="text" placeholder="Nome">
-                    </label>
+               
+                <i class="user1 far fa-user-circle fa-4x"></i>
                     
-                    <label class="label-input" for="">
-                        <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="Email">
-                    </label>
-                    
-                    <label class="label-input" for="">
-                        <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Senha">
-                    </label>
-                    
-                    
-                    <button class="btn btn-second">Registrar</button>        
+                <a href="http://localhost/Oficial2/www/cliente/cadastrar">   <button  class=" btn btn-second" >Registrar</button>  </a>      
                 </form>
             </div><!-- second column -->
         </div><!-- first content -->
@@ -99,7 +85,7 @@
                 
                     <label class="label-input" for="">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="senha" name="senha" placeholder="Senha">
+                        <input type="password" name="senha" placeholder="Senha">
                     </label>
                 
                     <a class="password" href="#">Esqueceu sua senha ?</a>

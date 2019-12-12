@@ -40,7 +40,7 @@
     
     <!-- Category Card -->
     <div class="col-md-4 top">
-        <div class="card rounded">
+        <div class="card rounded ">
             <div class="card-image">
                 <span class="card-notify-badge">Ótimo Rendimento</span>
                 <span class="card-notify-year">2019</span>

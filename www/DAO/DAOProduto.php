@@ -32,7 +32,8 @@ class DAOProduto{
                         FROM produto INNER JOIN servico 
                         ON produto.fk_servico_produto = 
                         servico.pk_servico"
-                    ;
+                        ;
+                    
             $con = Conexao::getInstance()->prepare($sql);
             $con->execute();
     
