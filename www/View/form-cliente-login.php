@@ -93,6 +93,6 @@
                 </form>
             </div><!-- second column -->
         </div><!-- second-content -->
-    
+</div>
     <script src="../3js/app.js"></script>
 <?php //include "View/footer.php";?>
