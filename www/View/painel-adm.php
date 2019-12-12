@@ -5,7 +5,7 @@
 <!-- Example single danger button -->
 <div class="btn-group p">
   <button type="button" class="btn btn-primary dropdown-toggle p" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cog"></i>
-  Settings <span class="badge badge-light">4</span>
+  Settings <span class="badge badge-light">2</span>
   </button>
   <div class="dropdown-menu">
     <p>O Cliente Coringa Acaba de efetua um Pedido Pelo serviço de alinhamento</p>

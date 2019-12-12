@@ -227,6 +227,12 @@
             $view = "cart.php";
         break;
 
+        case 'pedidofinalizar':
+        $obj = new \LOJA\API\PedidoCadastrar;
+
+        $view = "form-cliente-login.php";
+        break;
+
      
 
 default:
