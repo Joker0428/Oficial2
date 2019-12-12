@@ -2,28 +2,44 @@
     use PHPUnit\Framework\TestCase;
     use LOJA\Model\Produto;
     use LOJA\DAO\DAOProduto;
-    Class DAOProdutoTests extends TestCase
+
+    class DAOProdutoTests extends TestCase
     {
+        public $servico; //dados do departamento
         /**
          * @before
          */
-        /*public function setUpDeleteAll() {
-            $DAO = new DAOProduto();
-            $DAO->deleteAll();
-        }*/
-        public function testCadastro()
-        {
-            $c = new Produto();
-            // $c->setId();
-            $c->setNome('Oleo');
-            $c->setPreco('R$500');
-            $c->setDescricao('para motor');
-            $c->setImagem('123.123.123-33');
-            $c->setServico('troca de oleo');
-
-            $DAO = new DAOProduto();
-            $msg = $DAO->cadastrar($c);
-            $this->assertEquals($msg, "Cadastrado com sucesso");
+        public function setUpInit(){
+            //cria um novo departamento
+            $this->servico =new Servico();
+            $this->servico->setNome('Eletrônicos');
+            //cadastra um novo departamento para teste
+            $DAO = new DAOServico();
+            $DAO->cadastrar($this->servico);
+            $this->servico->setId($DAO->lastId);
         }
+    
+         public function testCadastro() // testa o cadastro de produtos
+         {
+             //definindo produto para teste
+             $produto = new Produto();
+             $produto->setNome('Televisão');
+             $produto->setPreco(2000);
+             $produto->setDescricao('Samsung 4k');
+             $produto->setImagem('imagem.jpg');
+             //definindo o departamento para o produto
+             $produto->setDepartamento($this->departamento);
+             //executando cadastro
+             $DAO = new DAOproduto();
+             $result = $DAO->cadastrar($produto);
+             //verificando se o cadastro foi efetuado com sucesso
+             $this->assertEquals($result, "Cadastrado com sucesso");
+             //deletando a categoria e o cliente 
+             $DAO->deleteFromId($DAO->lastId);
+             $DAO = new DAODepartamento();
+             $DAO->deleteFromId($this->departamento->getId());
+         }
+        
+    
     }
 ?>
