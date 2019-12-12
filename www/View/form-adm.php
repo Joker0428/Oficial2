@@ -1,6 +1,6 @@
 <?php include "View/header-adm.php";?>
 
-<h1>LOGIN DO ADMIN</h1>
+<h1 class="title">LOGIN DO ADMIN</h1>
     
 <form  method="post" action="adm">
 <fieldset>
