@@ -2,9 +2,9 @@
     use PHPUnit\Framework\TestCase;
     use LOJA\Model\Produto;
     use LOJA\DAO\DAOProduto;
-    use FITCHEF\Model\Servico;
-    use FITCHEF\DAO\DAOProduto;
-    use FITCHEF\DAO\DAOServico;
+    use LOJA\Model\Servico;
+    use LOJA\DAO\DAOProduto;
+    use LOJA\DAO\DAOServico;
 
     class DAOProdutoTests extends TestCase
     {
