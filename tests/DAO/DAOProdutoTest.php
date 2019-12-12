@@ -2,6 +2,9 @@
     use PHPUnit\Framework\TestCase;
     use LOJA\Model\Produto;
     use LOJA\DAO\DAOProduto;
+    use FITCHEF\Model\Servico;
+    use FITCHEF\DAO\DAOProduto;
+    use FITCHEF\DAO\DAOServico;
 
     class DAOProdutoTests extends TestCase
     {
@@ -28,7 +31,7 @@
              $produto->setDescricao('Samsung 4k');
              $produto->setImagem('imagem.jpg');
              //definindo o departamento para o produto
-             $produto->setDepartamento($this->departamento);
+             $produto->setServico($this->servico);
              //executando cadastro
              $DAO = new DAOproduto();
              $result = $DAO->cadastrar($produto);
@@ -36,8 +39,8 @@
              $this->assertEquals($result, "Cadastrado com sucesso");
              //deletando a categoria e o cliente 
              $DAO->deleteFromId($DAO->lastId);
-             $DAO = new DAODepartamento();
-             $DAO->deleteFromId($this->departamento->getId());
+             $DAO = new DAOServico();
+             $DAO->deleteFromId($this->servico->getId());
          }
         
     
