@@ -21,7 +21,6 @@
                     $carrinho->removeItem($id); // excluir carrinho
                     $_SESSION['carrinho'] = $carrinho; // atualiza o carrinho na sessão
                 };
-            }
             else {
                 header("location: http://www.qualificaroficina.web70113.uni5.net");
             }

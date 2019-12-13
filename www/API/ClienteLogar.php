@@ -22,7 +22,7 @@ use LOJA\Model\Cliente;
                         $_SESSION['clienteid'] = $result['id'];
                         $_SESSION['clientenome'] = $result['nome'];
 
-                        header("location: http://localhost/Oficial2/www/painel/cliente");
+                        header("location: http://www.qualificaroficina.web70113.uni5.net/painel/cliente");
                     }else{
                         $this->msg = "Cliente/Senha inválidos";
                     }
