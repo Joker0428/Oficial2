@@ -68,7 +68,7 @@
   </div>
 </div>
 
-<form class="form-horizontal">
+<form class="form-horizontal center-form ">
 <fieldset>
 <div class='container ww'>
 <!-- Text input-->

@@ -15,7 +15,7 @@ class DAOServico{
         try{
              $con = $pdo->prepare(
               "INSERT INTO servico
-                    VALUES (default, :nome)"
+                VALUES (default, :nome)"
            );
 
         
