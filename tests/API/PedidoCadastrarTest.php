@@ -62,15 +62,18 @@
 
     public function testCadastro() // testa o cadastro de cadastro
     {
-        $obj = new Pedido();
+        /*$obj = new Pedido();
         $obj->setData('2019-12-25');
         $obj->setFrete(20.00);
         $obj->setDias(5);
         $obj->setCliente($this->cliente);
 
         $DAO = new DAOPedido();
-        $msg = $DAO->cadastrar($obj,$this->carrinho);
+        $msg = $DAO->cadastrar($obj,$this->carrinho);*/
 
+        $_SESSION['carrinho'] = $this ->carrinho;
+
+        $obj = new \LOJA\API\PedidoCadastar;
         $this->assertEquals($msg,"Pedido efetuado com sucesso");
     }
 }
