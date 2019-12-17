@@ -12,8 +12,8 @@
 
         try{
             $c =new Cliente();
-            $c->setId(17);// Inserir um id já existente
-            $c->setNome('CAIO');
+            $c->setId($_SESSION['clienteid']);// Inserir um id já existente
+            $c->setNome($_SESSION['clientenome']);
 
             $obj = new Pedido();
             //$c->setId();
